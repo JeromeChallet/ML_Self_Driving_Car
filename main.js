@@ -1,5 +1,5 @@
 const carCanvas = document.getElementById("carCanvas");
-carCanvas.width = 200;
+carCanvas.width = 300;
 const networkCanvas = document.getElementById("networkCanvas");
 networkCanvas.width = 300;
 
@@ -28,6 +28,32 @@ const traffic = [
   new Car(road.getLaneCenter(1), -500, 30, 50, "DUMMY", 2, getRandomColor()),
   new Car(road.getLaneCenter(1), -700, 30, 50, "DUMMY", 2, getRandomColor()),
   new Car(road.getLaneCenter(2), -700, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(1), -900, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(2), -1100, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(0), -1100, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(0), -1300, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(2), -1300, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(0), -1500, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(1), -1500, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(2), -1700, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(1), -1700, 30, 50, "DUMMY", 2, getRandomColor()),
+
+  new Car(road.getLaneCenter(1), -1900, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(0), -1900, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(2), -2100, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(0), -2100, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(1), -2200, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(1), -2200, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(2), -2400, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(1), -2400, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(2), -2600, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(0), -2600, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(0), -2800, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(2), -2800, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(0), -3000, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(1), -3000, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(2), -3200, 30, 50, "DUMMY", 2, getRandomColor()),
+  new Car(road.getLaneCenter(1), -3200, 30, 50, "DUMMY", 2, getRandomColor()),
 ];
 
 animate();

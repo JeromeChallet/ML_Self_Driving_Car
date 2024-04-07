@@ -32,22 +32,37 @@ button:hover {
   background: lightgray;
 }
 
-/* Apply layout for screens with a maximum width of a phone */
 @media screen and (max-device-width: 390px) {
   body {
-    align-items: stretch; /* Stretch children vertically */
-    height: 100vh; /* Ensure the body fills the entire viewport height */
+    position: relative;
+    align-items: stretch;
+    height: 100vh;
     justify-content: center;
-  }
-
-  #verticalButtons {
-    align-self: stretch; /* Stretch to fill available vertical space */
-    justify-content: center; /* Center the buttons vertically */
-    align-self: stretch; /* Stretch to fill available vertical space */
   }
 
   #carCanvas,
   #networkCanvas {
     width: 100%;
+    height: 100%;
   }
+}
+
+#verticalButtons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Align buttons at the start of the container */
+  align-items: flex-end; /* Align buttons at the bottom of the container */
+}
+
+.button {
+  width: 150px;
+  height: 150px;
+  margin-right: 10px;
+  border: 2px solid black;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
 }

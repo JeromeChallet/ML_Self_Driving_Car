@@ -2,11 +2,52 @@ body {
   margin: 0;
   background: darkgray;
   overflow: hidden;
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-#networkCanvas {
+
+#verticalButtons {
+  display: flex;
+  flex-direction: column;
+}
+
+button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 5px 7px 5px;
+  margin: 2px;
+  cursor: pointer;
+}
+button:hover {
+  background: blue;
+}
+
+#networkCanvas,
+#carCanvas {
   background: black;
 }
+
 #carCanvas {
   background: lightgray;
+}
+
+/* Apply layout for screens with a maximum width of a phone */
+@media screen and (max-device-width: 390px) {
+  body {
+    align-items: stretch; /* Stretch children vertically */
+    height: 100vh; /* Ensure the body fills the entire viewport height */
+    justify-content: center;
+  }
+
+  #verticalButtons {
+    align-self: stretch; /* Stretch to fill available vertical space */
+    justify-content: center; /* Center the buttons vertically */
+    align-self: stretch; /* Stretch to fill available vertical space */
+  }
+
+  #carCanvas,
+  #networkCanvas {
+    width: 100%;
+  }
 }
